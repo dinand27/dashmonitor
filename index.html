@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoring DT</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="vendor/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- bagian navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logosam_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Sentosa Abadi Mining 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+
+              </ul>
+            </div>
+          </nav>
+    </div>    <!--end bagian navbar -->
+
+<!-- bagian wrap chart -->
   <div class="wrapper">
         <div class="item">box-1</div>
         <div class="item">box-2</div>
@@ -17,27 +42,208 @@
         <div class="item">box-7</div>
   </div>
   
-        <div class="kotaklabel">
-            <span class=" txt-center">DT-412    
-        <div class="circle"></div>  
-        <div class="kotakjam"><span class="txt-jam">15.00</span> </div>
-        </span>
-        </div>
 
-        <p></p>
-        <div class="kotaklabel">
-            <span class=" txt-center">DT-413    
-        <div class="circle"></div>  
-        <div class="kotakjam"> <span class="txt-jam">16.00</span></div>
-        </span>
-        </div>
-        <p></p>
-        <div class="kotaklabel">
-            <span class=" txt-center">DT-415 
-        <div class="circle"></div>  
-        <div class="kotakjam"><span class="txt-jam">18.00</span></div>
-        </span>
-        </div>
+
+  <!--batas ROWs  -->
+<div class="row">
+    <!-- end rows -->
+    <div class="col-md-3 mt-5">
+      <!-- batas awal cards -->
+  <div class="card" >
+    <div class="card-body">
+      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+      <!-- table -->
+      <table class="table table-borderless">
+
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+        </tbody>
+      </table>  
+
+    </div>
+  </div>
+<!-- batas end cards -->
+    </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Mining BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental KBM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td><button type="button" class="btn btn-danger"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+</div>
+
+
+
+
+  <!--batas ROWs  -->
+  <div class="row">
+    <!-- end rows -->
+
+    <div class="col-md-3 mt-5">
+      <!-- batas awal cards -->
+  <div class="card" >
+    <div class="card-body">
+      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+    <!-- batas chart start -->
+<div>
+    <canvas id="chartMKBM"></canvas>
+  </div>
+  <script>
+    const ctx = document.getElementById('chartMKBM');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+    </div>
+  </div>
+<!-- batas end cards -->
+    </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Mining BDM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+  <!-- batas chart start -->
+<div>
+  <canvas id="chartMBDM"></canvas>
+</div>
+<script>
+  const ctx = document.getElementById('chartMBDM');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+  </div>
+
+
 
 
 
