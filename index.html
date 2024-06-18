@@ -32,146 +32,20 @@
     </div>    <!--end bagian navbar -->
 
 <!-- bagian wrap chart -->
-  <div class="wrapper">
-        <div class="item">box-1</div>
-        <div class="item">box-2</div>
-        <div class="item">box-3</div>
-        <div class="item">box-4</div>
-        <div class="item">box-5</div>
-        <div class="item">box-6</div>
-        <div class="item">box-7</div>
-  </div>
-  
-
-
-  <!--batas ROWs  -->
-<div class="row">
-    <!-- end rows -->
-    <div class="col-md-3 mt-5">
-      <!-- batas awal cards -->
-  <div class="card" >
-    <div class="card-body">
-      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
-      <!-- table -->
-      <table class="table table-borderless">
-
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td> <button type="button" class="btn btn-success"></button></td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td> <button type="button" class="btn btn-warning"></button></td>
-          </tr>
-        </tbody>
-      </table>  
-
-    </div>
-  </div>
-<!-- batas end cards -->
-    </div> 
-<!-- batas ROW -->
-
-<div class="col-md-3 mt-5">
-    <!-- batas awal cards -->
-<div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Mining BDM</h5>
-    <!-- table -->
-    <table class="table table-borderless">
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td> <button type="button" class="btn btn-success"></button></td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td> <button type="button" class="btn btn-warning"></button></td>
-        </tr>
-      </tbody>
-    </table>  
-
-  </div>
-</div>
-<!-- batas end cards -->
-  </div> 
-<!-- batas ROW -->
-
-<div class="col-md-3 mt-5">
-    <!-- batas awal cards -->
-<div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Rental KBM</h5>
-    <!-- table -->
-    <table class="table table-borderless">
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td> <button type="button" class="btn btn-success"></button></td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td> <button type="button" class="btn btn-warning"></button></td>
-        </tr>
-      </tbody>
-    </table>  
-
-  </div>
-</div>
-<!-- batas end cards -->
-  </div> 
-<!-- batas ROW -->
-
-<div class="col-md-3 mt-5">
-    <!-- batas awal cards -->
-<div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Rental BDM</h5>
-    <!-- table -->
-    <table class="table table-borderless">
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td> <button type="button" class="btn btn-success"></button></td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td><button type="button" class="btn btn-danger"></button></td>
-        </tr>
-      </tbody>
-    </table>  
-
-  </div>
-</div>
-<!-- batas end cards -->
-  </div> 
-<!-- batas ROW -->
-
-</div>
-
-
-
-
-  <!--batas ROWs  -->
+  <div class="d-flex flex-wrap">
+     
+     <!--batas ROWs  -->
   <div class="row">
-    <!-- end rows -->
+    <!-- batas rows -->
 
-    <div class="col-md-3 mt-5">
+    <div class="col-md-3">
       <!-- batas awal cards -->
   <div class="card" >
     <div class="card-body">
-      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 1</span></h5>
     <!-- batas chart start -->
-<div>
+
+<div style="width: 300px; height: auto;">
     <canvas id="chartMKBM"></canvas>
   </div>
   <script>
@@ -203,19 +77,19 @@
     </div> 
 <!-- batas ROW -->
 
-<div class="col-md-3 mt-5">
+<div class="col-md-3">
     <!-- batas awal cards -->
 <div class="card" >
   <div class="card-body">
     <h5 class="card-title">Mining BDM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
   <!-- batas chart start -->
-<div>
+  <div style="width: 300px; height: auto;">
   <canvas id="chartMBDM"></canvas>
 </div>
 <script>
-  const ctx = document.getElementById('chartMBDM');
+  const ctx2 = document.getElementById('chartMBDM');
 
-  new Chart(ctx, {
+  new Chart(ctx2, {
     type: 'bar',
     data: {
       labels: ['Red', 'Blue', 'Yellow', 'Green'],
@@ -241,11 +115,211 @@
   </div> 
 <!-- batas ROW -->
 
+
+<div class="col-md-3">
+  <!-- batas awal cards -->
+<div class="card" >
+<div class="card-body">
+  <h5 class="card-title">Rental BDM  <span class="text-muted small pt-2 ps-1">| 3</span></h5>
+<!-- batas chart start -->
+<div style="width: 300px; height: auto;">
+<canvas id="chartRBDM"></canvas>
+</div>
+<script>
+const ctx3 = document.getElementById('chartRBDM');
+
+new Chart(ctx3, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+
+</div>
+</div>
+<!-- batas end cards -->
+</div> 
+<!-- batas ROW -->
+
+<div class="col-md-3">
+  <!-- batas awal cards -->
+<div class="card" >
+<div class="card-body">
+  <h5 class="card-title">Rental KBM  <span class="text-muted small pt-2 ps-1">| 4</span></h5>
+<!-- batas chart start -->
+<div style="width: 300px; height: auto;">
+<canvas id="chartRKBM"></canvas>
+</div>
+<script>
+const ctx4 = document.getElementById('chartRKBM');
+
+new Chart(ctx4, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+
+</div>
+</div>
+<!-- batas end cards -->
+</div> 
+<!-- batas ROW -->
+
   </div>
+  <!-- batas end row chart -->
+
+  </div>
+  <!-- wrap -->
 
 
 
 
+
+  <!--batas ROWs  -->
+<div class="row">
+    <!-- end rows -->
+    <div class="col-md-3 mt-5">
+      <!-- batas awal cards -->
+  <div class="card" >
+    <div class="card-body">
+      <h5 class="card-title">Mining KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+      <!-- table -->
+      <table class="table table-borderless">
+
+        <tbody>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+        </tbody>
+      </table>  
+
+    </div>
+  </div>
+<!-- batas end cards -->
+    </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Mining BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>DT-341</td>
+          <td>15:30</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-352</td>
+          <td>17:45</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental KBM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>DT-360</td>
+          <td>16:39</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-362</td>
+          <td>18.55</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>DT-332</td>
+          <td>15:20</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-334</td>
+          <td>16:38</td>
+          <td><button type="button" class="btn btn-danger"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+</div>
+
+
+
+
+ 
 
 </body>
 </html>
