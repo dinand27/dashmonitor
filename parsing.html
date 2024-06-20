@@ -36,9 +36,17 @@
 
     <!-- scrip -->
     <input type="text" id="nolambung">
+    <input type="button" name="btn1" id="btn1" value="Klik">
+    <p class="output" id="output1"></p>
 <script>
     const txt1 = document.getElementById('nolambung');
-    console.log(txt1);
+    const btn1 = document.getElementById('btn1');
+    const output1 = document.getElementById('output1');
+ 
+    function fn1() {
+        output1.innerHTML= txt1.value;
+    }
+    btn1.addEventListener('click',fn1);
 </script>
 
 
