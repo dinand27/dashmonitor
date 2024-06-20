@@ -1,0 +1,28 @@
+{
+    "person": [
+        {
+            "nolambung": "DT341",
+            "waktu": "13:30",
+            "status": "Ready",
+            "id": 1
+        },
+        {
+            "nolambung": "DT341",
+            "waktu": "13:30",
+            "status": "Ready",
+            "id": 1
+        },
+        {
+            "nolambung": "DT341",
+            "waktu": "13:30",
+            "status": "Ready",
+            "id": 1
+        },
+        {
+            "nolambung": "DT341",
+            "waktu": "13:30",
+            "status": "Ready",
+            "id": 1
+        }
+    ]
+ }
